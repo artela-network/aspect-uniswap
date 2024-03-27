@@ -43,23 +43,31 @@ class Aspect implements IPreContractCallJP, IAspectOperation {
 
         // Define functions that are not allowed to be reentered.
         const noReentrantMethods: Array<string> = [
-            ethereum.computeMethodSig('swapExactTokensForETH(uint,uint,address[],address,uint)'),
-            ethereum.computeMethodSig('swapETHForExactTokens(uint,address[],address,uint)'),
-            ethereum.computeMethodSig('swapExactETHForTokensSupportingFeeOnTransferTokens(uint,address[],address,uint)'),
-            ethereum.computeMethodSig('swapExactTokensForTokensSupportingFeeOnTransferTokens(uint,uint,address[],address,uint)'),
-            ethereum.computeMethodSig('swapExactTokensForETHSupportingFeeOnTransferTokens(uint,uint,address[],address,uint)'),
-            ethereum.computeMethodSig('swapTokensForExactETH(uint,uint,address[],address,uint)'),
-            ethereum.computeMethodSig('swapExactETHForTokens(uint,address[],address,uint)'),
-            ethereum.computeMethodSig('swapTokensForExactTokens(uint,uint,address[],address,uint)'),
-            ethereum.computeMethodSig('swapExactTokensForTokens(uint,uint,address[],address,uint)'),
+            ethereum.computeMethodSig('swapExactTokensForETH(uint256,uint256,address[],address,uint256)'),
+            ethereum.computeMethodSig('swapETHForExactTokens(uint256,address[],address,uint256)'),
+            ethereum.computeMethodSig('swapExactETHForTokensSupportingFeeOnTransferTokens(uint256,address[],address,uint256)'),
+            ethereum.computeMethodSig('swapExactTokensForTokensSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256)'),
+            ethereum.computeMethodSig('swapExactTokensForETHSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256)'),
+            ethereum.computeMethodSig('swapTokensForExactETH(uint256,uint256,address[],address,uint256)'),
+            ethereum.computeMethodSig('swapExactETHForTokens(uint256,address[],address,uint256)'),
+            ethereum.computeMethodSig('swapTokensForExactTokens(uint256,uint256,address[],address,uint256)'),
+            ethereum.computeMethodSig('swapExactTokensForTokens(uint256,uint256,address[],address,uint256)'),
         ];
+
+        sys.log("current method sig: " + currentCallMethod)
+        sys.log("swapExactETHForTokens method sig: " + noReentrantMethods[6])
 
         // Verify if the current method is within the scope of functions that are not susceptible to reentrancy.
         if (noReentrantMethods.includes(currentCallMethod)) {
+            sys.log("current method is in noReentrantMethods")
             const accounts = sys.aspect.mutableState.get<string>(this.RiskKey).unwrap();
-            if (accounts.includes(from)) {
+            sys.log("accounts: " + accounts)
+            sys.log("from: " + from)
+            if (accounts.includes(from.toLowerCase())) {
+                sys.log("tx from in risk list")
                 sys.revert("tx from in risk list")
             }
+            sys.log("tx from not in risk list")
         }
 
     }
@@ -92,7 +100,8 @@ class Aspect implements IPreContractCallJP, IAspectOperation {
                 newSet.delete(accArray[i])
             }
         }
-        const resultAcc = newSet.values().join(splitChar)
+        const resultAcc = newSet.values().join(splitChar).toLowerCase()
+        sys.log("resultAcc: " + resultAcc)
         sys.aspect.mutableState.get<string>(this.RiskKey).set<string>(resultAcc)
 
         return stringToUint8Array("success");

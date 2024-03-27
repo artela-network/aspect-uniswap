@@ -91,13 +91,6 @@ async function deploy() {
   signedTx = await web3.eth.accounts.signTransaction(operationCallTx, privateKey);
   await web3.eth.sendSignedTransaction(signedTx.rawTransaction);
   console.log("Successfully added sender account to blacklist.");
-
-  // Deploy Multicall (needed for Interface)
-  const multicall = await ethers.getContractFactory('Multicall');
-  const multicallInstance = await multicall.deploy();
-  await multicallInstance.deployed();
-
-  console.log(`Multicall deployed to : ${ multicallInstance.address }`);
 }
 
 deploy()

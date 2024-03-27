@@ -8,7 +8,7 @@ async function test() {
 
   // Deploy Router passing Factory Address and WETH Address
   const router = await ethers.getContractFactory('UniswapV2Router02', account);
-  const routerInstance = await router.attach('0x35777d3eF03D87956dA938148e47922B87Cf0701');
+  const routerInstance = await router.attach('0xa646F6607af459917EFc14957bADC0Eb87f6dA7c');
 
   let tx = {
     to: routerInstance.address,
