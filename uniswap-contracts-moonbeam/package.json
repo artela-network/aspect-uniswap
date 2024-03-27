@@ -6,6 +6,7 @@
     "@openzeppelin/contracts": "^2.5.0",
     "@uniswap/lib": "^4.0.1-alpha",
     "@uniswap/v2-core": "^1.0.1",
+    "@artela/web3": "^1.9.22",
     "ethers": "^5.0.31",
     "hardhat": "^2.0.10"
   }

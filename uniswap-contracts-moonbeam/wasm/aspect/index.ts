@@ -43,13 +43,13 @@ class Aspect implements IPreContractCallJP, IAspectOperation {
 
         // Define functions that are not allowed to be reentered.
         const noReentrantMethods: Array<string> = [
-            ethereum.computeMethodSig('swapExactTokensForETH(uint, uint, address[] , address , uint )'),
-            ethereum.computeMethodSig('swapETHForExactTokens(uint , address[] , address , uint )'),
-            ethereum.computeMethodSig('swapExactETHForTokensSupportingFeeOnTransferTokens(uint ,address[],address ,uint) '),
-            ethereum.computeMethodSig('swapExactTokensForTokensSupportingFeeOnTransferTokens(uint ,uint ,address[] ,address ,uint )'),
-            ethereum.computeMethodSig('swapExactTokensForETHSupportingFeeOnTransferTokens(uint ,uint ,address[] ,address ,uint)'),
-            ethereum.computeMethodSig('swapTokensForExactETH(uint , uint , address[] , address , uint )'),
-            ethereum.computeMethodSig('swapExactETHForTokens(uint, address[], address, uint)'),
+            ethereum.computeMethodSig('swapExactTokensForETH(uint,uint,address[],address,uint)'),
+            ethereum.computeMethodSig('swapETHForExactTokens(uint,address[],address,uint)'),
+            ethereum.computeMethodSig('swapExactETHForTokensSupportingFeeOnTransferTokens(uint,address[],address,uint)'),
+            ethereum.computeMethodSig('swapExactTokensForTokensSupportingFeeOnTransferTokens(uint,uint,address[],address,uint)'),
+            ethereum.computeMethodSig('swapExactTokensForETHSupportingFeeOnTransferTokens(uint,uint,address[],address,uint)'),
+            ethereum.computeMethodSig('swapTokensForExactETH(uint,uint,address[],address,uint)'),
+            ethereum.computeMethodSig('swapExactETHForTokens(uint,address[],address,uint)'),
             ethereum.computeMethodSig('swapTokensForExactTokens(uint,uint,address[],address,uint)'),
             ethereum.computeMethodSig('swapExactTokensForTokens(uint,uint,address[],address,uint)'),
         ];
