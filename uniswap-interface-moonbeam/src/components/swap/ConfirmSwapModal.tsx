@@ -1,4 +1,4 @@
-import { currencyEquals, Trade } from 'artswap'
+import { currencyEquals, Trade } from 'aspectswap'
 import React, { useCallback, useMemo } from 'react'
 import TransactionConfirmationModal, {
   ConfirmationModalContent,

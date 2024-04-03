@@ -1,4 +1,4 @@
-import { Trade } from 'artswap'
+import { Trade } from 'aspectswap'
 import React, { Fragment, memo, useContext } from 'react'
 import { ChevronRight } from 'react-feather'
 import { Flex } from 'rebass'

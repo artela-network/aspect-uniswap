@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, JSBI, Pair, Percent, TokenAmount } from 'artswap'
+import { Currency, CurrencyAmount, JSBI, Pair, Percent, TokenAmount } from 'aspectswap'
 import { useCallback } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { usePair } from '../../data/Reserves'

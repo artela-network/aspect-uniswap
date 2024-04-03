@@ -1,4 +1,4 @@
-import { ChainId, Token } from 'artswap'
+import { ChainId, Token } from 'aspectswap'
 import { Tags, TokenInfo, TokenList } from '@uniswap/token-lists'
 import { useMemo } from 'react'
 import { useSelector } from 'react-redux'

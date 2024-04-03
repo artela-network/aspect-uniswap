@@ -1,4 +1,4 @@
-import { Currency, DEV, Token } from 'artswap'
+import { Currency, DEV, Token } from 'aspectswap'
 import React, { KeyboardEvent, RefObject, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react'
 import ReactGA from 'react-ga'
 import { useTranslation } from 'react-i18next'

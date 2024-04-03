@@ -1,4 +1,4 @@
-import { CurrencyAmount, JSBI, Token, Trade } from 'artswap'
+import { CurrencyAmount, JSBI, Token, Trade } from 'aspectswap'
 import React, { useCallback, useContext, useEffect, useMemo, useState } from 'react'
 import { ArrowDown } from 'react-feather'
 import ReactGA from 'react-ga'

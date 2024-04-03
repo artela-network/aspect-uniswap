@@ -1,4 +1,4 @@
-import { ChainId } from 'artswap'
+import { ChainId } from 'aspectswap'
 import React, { useContext } from 'react'
 import styled, { ThemeContext } from 'styled-components'
 import Modal from '../Modal'

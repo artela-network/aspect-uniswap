@@ -1,4 +1,4 @@
-import { Currency, DEV, Token } from 'artswap'
+import { Currency, DEV, Token } from 'aspectswap'
 
 export function currencyId(currency: Currency): string {
   if (currency === DEV) return 'ETH'

@@ -1,4 +1,4 @@
-import { ChainId } from 'artswap'
+import { ChainId } from 'aspectswap'
 import MULTICALL_ABI from './abi.json'
 import { multicall } from '../../moonbase_address.json'
 

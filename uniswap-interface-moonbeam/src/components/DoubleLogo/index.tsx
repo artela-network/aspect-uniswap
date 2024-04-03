@@ -1,4 +1,4 @@
-import { Currency } from 'artswap'
+import { Currency } from 'aspectswap'
 import React from 'react'
 import styled from 'styled-components'
 import CurrencyLogo from '../CurrencyLogo'

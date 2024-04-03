@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Pair, Token, Trade } from 'artswap'
+import { Currency, CurrencyAmount, Pair, Token, Trade } from 'aspectswap'
 import flatMap from 'lodash.flatmap'
 import { useMemo } from 'react'
 

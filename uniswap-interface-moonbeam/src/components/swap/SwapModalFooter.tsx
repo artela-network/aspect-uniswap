@@ -1,4 +1,4 @@
-import { Trade, TradeType } from 'artswap'
+import { Trade, TradeType } from 'aspectswap'
 import React, { useContext, useMemo, useState } from 'react'
 import { Repeat } from 'react-feather'
 import { Text } from 'rebass'

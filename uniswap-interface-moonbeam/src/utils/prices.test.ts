@@ -1,4 +1,4 @@
-import { ChainId, JSBI, Pair, Route, Token, TokenAmount, Trade, TradeType } from 'artswap'
+import { ChainId, JSBI, Pair, Route, Token, TokenAmount, Trade, TradeType } from 'aspectswap'
 import { computeTradePriceBreakdown } from './prices'
 
 describe('prices', () => {

@@ -1,4 +1,4 @@
-import { CurrencyAmount, DEV, JSBI } from 'artswap'
+import { CurrencyAmount, DEV, JSBI } from 'aspectswap'
 import { MIN_ETH } from '../constants'
 
 /**

@@ -1,4 +1,4 @@
-import { Trade, TradeType } from 'artswap'
+import { Trade, TradeType } from 'aspectswap'
 import React, { useContext, useMemo } from 'react'
 import { ArrowDown, AlertTriangle } from 'react-feather'
 import { Text } from 'rebass'

@@ -1,4 +1,4 @@
-import { Currency, currencyEquals, DEV, WDEV } from 'artswap'
+import { Currency, currencyEquals, DEV, WDEV } from 'aspectswap'
 import { useMemo } from 'react'
 import { tryParseAmount } from '../state/swap/hooks'
 import { useTransactionAdder } from '../state/transactions/hooks'

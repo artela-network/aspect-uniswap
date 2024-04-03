@@ -1,4 +1,4 @@
-import { Token, TokenAmount } from 'artswap'
+import { Token, TokenAmount } from 'aspectswap'
 import { useMemo } from 'react'
 
 import { useTokenContract } from '../hooks/useContract'

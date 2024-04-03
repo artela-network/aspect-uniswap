@@ -1,6 +1,6 @@
 import { BigNumber } from '@ethersproject/bignumber'
 import { AddressZero } from '@ethersproject/constants'
-import { TokenAmount, Token, ChainId, Percent, JSBI } from 'artswap'
+import { TokenAmount, Token, ChainId, Percent, JSBI } from 'aspectswap'
 
 import {
   getEtherscanLink,

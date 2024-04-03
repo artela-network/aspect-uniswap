@@ -1,6 +1,6 @@
 import React from 'react'
 import { Text } from 'rebass'
-import { ChainId, Currency, currencyEquals, DEV, Token } from 'artswap'
+import { ChainId, Currency, currencyEquals, DEV, Token } from 'aspectswap'
 import styled from 'styled-components'
 
 import { SUGGESTED_BASES } from '../../constants'

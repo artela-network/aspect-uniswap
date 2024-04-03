@@ -1,4 +1,4 @@
-import { Percent } from 'artswap'
+import { Percent } from 'aspectswap'
 import React from 'react'
 import { ONE_BIPS } from '../../constants'
 import { warningSeverity } from '../../utils/prices'

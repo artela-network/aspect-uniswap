@@ -1,4 +1,4 @@
-import { Currency, Percent, Price } from 'artswap'
+import { Currency, Percent, Price } from 'aspectswap'
 import React, { useContext } from 'react'
 import { Text } from 'rebass'
 import { ThemeContext } from 'styled-components'

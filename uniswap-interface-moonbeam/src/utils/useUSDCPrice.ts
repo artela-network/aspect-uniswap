@@ -1,4 +1,4 @@
-import { ChainId, Currency, currencyEquals, JSBI, Price, WDEV } from 'artswap'
+import { ChainId, Currency, currencyEquals, JSBI, Price, WDEV } from 'aspectswap'
 import { useMemo } from 'react'
 import { USDC } from '../constants'
 import { PairState, usePairs } from '../data/Reserves'

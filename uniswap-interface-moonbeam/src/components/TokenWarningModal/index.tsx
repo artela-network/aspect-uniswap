@@ -1,4 +1,4 @@
-import { Token } from 'artswap'
+import { Token } from 'aspectswap'
 import { transparentize } from 'polished'
 import React, { useCallback, useMemo, useState } from 'react'
 import styled from 'styled-components'

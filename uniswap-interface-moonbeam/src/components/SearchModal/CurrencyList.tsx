@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, currencyEquals, DEV, Token } from 'artswap'
+import { Currency, CurrencyAmount, currencyEquals, DEV, Token } from 'aspectswap'
 import React, { CSSProperties, MutableRefObject, useCallback, useMemo } from 'react'
 import { FixedSizeList } from 'react-window'
 import { Text } from 'rebass'

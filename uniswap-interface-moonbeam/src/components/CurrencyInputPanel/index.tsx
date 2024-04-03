@@ -1,4 +1,4 @@
-import { Currency, Pair } from 'artswap'
+import { Currency, Pair } from 'aspectswap'
 import React, { useState, useContext, useCallback } from 'react'
 import styled, { ThemeContext } from 'styled-components'
 import { darken } from 'polished'

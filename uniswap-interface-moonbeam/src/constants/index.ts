@@ -1,4 +1,4 @@
-import { ChainId, JSBI, Percent, Token, WDEV } from 'artswap'
+import { ChainId, JSBI, Percent, Token, WDEV } from 'aspectswap'
 import { AbstractConnector } from '@web3-react/abstract-connector'
 import { routerv2 } from '../moonbase_address.json'
 

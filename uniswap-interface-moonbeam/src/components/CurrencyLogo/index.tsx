@@ -1,4 +1,4 @@
-import { Currency, DEV, Token } from 'artswap'
+import { Currency, DEV, Token } from 'aspectswap'
 import React, { useMemo } from 'react'
 import styled from 'styled-components'
 

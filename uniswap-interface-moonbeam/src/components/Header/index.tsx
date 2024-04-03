@@ -1,4 +1,4 @@
-import { ChainId } from 'artswap'
+import { ChainId } from 'aspectswap'
 import React from 'react'
 import { isMobile } from 'react-device-detect'
 import { Text } from 'rebass'

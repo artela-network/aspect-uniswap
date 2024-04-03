@@ -1,6 +1,6 @@
 import { BigNumber } from '@ethersproject/bignumber'
 import { TransactionResponse } from '@ethersproject/providers'
-import { Currency, currencyEquals, DEV, TokenAmount, WDEV } from 'artswap'
+import { Currency, currencyEquals, DEV, TokenAmount, WDEV } from 'aspectswap'
 import React, { useCallback, useContext, useState } from 'react'
 import { Plus } from 'react-feather'
 import ReactGA from 'react-ga'
