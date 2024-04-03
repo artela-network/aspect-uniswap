@@ -1,7 +1,7 @@
 {
   "name": "artswap",
   "license": "MIT",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "🛠 An example SDK for building applications on top of Uniswap in Artela.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",

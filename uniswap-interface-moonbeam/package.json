@@ -50,7 +50,7 @@
     "inter-ui": "^3.13.1",
     "jazzicon": "^1.5.0",
     "lodash.flatmap": "^4.5.0",
-    "artswap": "1.0.6",
+    "artswap": "file:../uniswap-sdk-moonbeam",
     "multicodec": "^2.0.0",
     "multihashes": "^3.0.1",
     "polished": "^3.3.2",
